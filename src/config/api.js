@@ -1,0 +1,55 @@
+const version = 'api/v1';
+const LOGIN_URL = 'https://dev-umg.giftiicon.com';
+
+export const BASE_URL = `https://dev-esm.giftiicon.com/${version}`;
+export const USER_BASE_URL = `https://dev-umg.giftiicon.com/${version}`;
+export const VOUCHER_BASE_URL = `https://dev-vch.giftiicon.com/${version}`
+export const PAYMENT_BASE_URL = `https://dev-pmt.giftiicon.com/${version}`
+
+export const API = {
+    BRANDS: `${BASE_URL}/gfbrands?citycode`,
+    PRODUCTS: `${BASE_URL}/gfproductlist?citycode`,
+    PRODUCT_DETAIL: `${BASE_URL}/gfproductdetails?citycode`,
+    SEARCH: `${BASE_URL}/gfsearch?`,
+    CITIES: `${BASE_URL}/gfcities`,
+    EMOJIS: `${BASE_URL}/gfemojis?citycode`,
+    EMOJI_DETAIL: `${BASE_URL}/gfemojidetail?emojiid`,
+    BANNERS: `${BASE_URL}/gfbanners?`,
+    DEALS: `${BASE_URL}/gfgroupslist?citycode`,
+    DEALDETAILS: `${BASE_URL}/gfgroupedproductslist?`,
+    BRANDSTORES: `${BASE_URL}/gfbrandstores?`,
+    GROUPEDPRODUCTS: `${BASE_URL}/gfgroupedproductslist?`,
+    REGISTER: `${USER_BASE_URL}/register/?_format=json`,
+    VERIFY_OTP_REGISTER: `${USER_BASE_URL}/otp-mobile-verify`,
+    VERIFY_EMAIL: `${USER_BASE_URL}/verify-mail`,
+    CREATE_USER: `${USER_BASE_URL}/create-user`,
+    OAUTH_LOGIN: `${LOGIN_URL}/oauth/token`,
+    LOGIN: `${USER_BASE_URL}/login`,
+    UPDATE_DOB: `${USER_BASE_URL}/update-dob`,
+    UPDATE_LOCATION: `${USER_BASE_URL}/update-location`,
+    VERIFY_PASSWORD: `${USER_BASE_URL}/verify-password`,
+    UPDATE_PASSWORD: `${USER_BASE_URL}/update-password`,
+    UPDATE_NAME: `${USER_BASE_URL}/update-name`,
+    UPDATE_EMAIL: `${USER_BASE_URL}/update-mail`,
+    RECIEVER_INFO: `${USER_BASE_URL}/get-receivers-info`,
+    CREATE_ORDER: `${VOUCHER_BASE_URL}/vouchers`,
+    TRANSACTION: `${PAYMENT_BASE_URL}/payments?sndrid`,
+    SENT_GIFT: `${VOUCHER_BASE_URL}/sentvouchers?sndrid`,
+    RECEIVED_GIFT: `${VOUCHER_BASE_URL}/receivedvouchers?rcvrid`,
+    GIFT_DETAILS: `${VOUCHER_BASE_URL}/vouchers?`,
+    FEEDBACK: `${USER_BASE_URL}/get-user-feedback`,
+    TEASE: `${VOUCHER_BASE_URL}/teases`,
+    TEASE_DETAILS: `${VOUCHER_BASE_URL}/teases?`,
+    FORGOT_PASSWORD: `${USER_BASE_URL}/get-fp-mobile`,
+    FORGOT_OTP_MOBILE: `${USER_BASE_URL}/verify-user-fp-mobile`,
+    FORGOT_OTP_EMAIL: `${USER_BASE_URL}/verify-fp-mail`,
+    FORGOT_CHANGE_PASSWORD: `${USER_BASE_URL}/fp-update-password`,
+    FORGOT_VERIFY_NAME: `${USER_BASE_URL}/verify-fp-name`,
+    CHANGE_NUMBER: `${USER_BASE_URL}/get-new-mobile`,
+    VERIFY_NEW_NUMBER: `${USER_BASE_URL}/verify-new-mobile`,
+    APP_VERSION: `${USER_BASE_URL}/app-version`,
+    ORDER_PDF: `${VOUCHER_BASE_URL}/ordersummary?`,
+    GA_TRACKER_ID: 'UA-144947275-1',
+    SOCIAL_LOGIN: `${USER_BASE_URL}/social-login-connect`,
+    SOCIAL_LOGIN_VERIFY_MOBILE: `${USER_BASE_URL}/otp-fb-mobile-verify`,
+}

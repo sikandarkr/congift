@@ -1,0 +1,4 @@
+node_modules/**/*
+gen/
+android/local.properties
+android/app/build/
